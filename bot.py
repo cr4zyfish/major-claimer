@@ -1,4 +1,6 @@
 import sys
+import time
+import random
 
 sys.dont_write_bytecode = True
 
@@ -113,7 +115,7 @@ class Major:
                     base.log(f"{base.red}Error: {base.white}{e}")
 
             print()
-            wait_time = 60 * 60
+            wait_time = random.randint(60 * 60, 70 * 60)
             base.log(f"{base.yellow}Wait for {int(wait_time/60)} minutes!")
             time.sleep(wait_time)
 
